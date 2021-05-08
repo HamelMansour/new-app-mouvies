@@ -1,0 +1,7 @@
+.h-filter{
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}

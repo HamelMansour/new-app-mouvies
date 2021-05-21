@@ -4,9 +4,9 @@ const MovieCard =(props)=> {
     const {movie}= props
     return (
         <Card  className= {'h-card'}>
-            <span>title:{movie.titel} </span>
-            <span>description:{movie.decription} </span>
-            <span>posterurl:{movie.posterurl} </span>
+            <span>title:{movie.title} </span>
+            <span>description:{movie.description} </span>
+            <span>posterurl:{movie.posteurl} </span>
             <span>rating:{movie.rating} </span>
         </Card>
     )

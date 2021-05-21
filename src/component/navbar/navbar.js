@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navbar= () => {
-  
+  const router = useHistory();
   const classes = useStyles();
 
   return  (

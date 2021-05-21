@@ -1,29 +1,31 @@
-import './addmovie.css'
+import './register.css'
 import {Button, Card, TextField} from "@material-ui/core";
-import { useState } from 'react';
 
-const AddMovie =()=> {
-    const [title, setTitle] = useState ('')
+const Register = () => {
     return (
         <div className={'register-container'}>
             <Card className={'register-card'}>
                 <h1>Inscription</h1>
-                <TextField label="title"
-                           type="search"
-                           value={title}
-                           onChange={event => setTitle(event.target.value)}
-                           variant="outlined"/>
-                <TextField label="description"
+                <TextField label="Nom"
                            type="search"
                            variant="outlined"/>
-                <TextField label="rating"
+                <TextField label="Prénom"
                            type="search"
                            variant="outlined"/>
-                <Button variant="envoyer" color="primary">
+                <TextField label="Email"
+                           type="search"
+                           variant="outlined"/>
+                <TextField label="Mot de passe"
+                           type="search"
+                           variant="outlined"/>
+                <Button variant="contained" color="primary">
                     Envoyer
+                </Button>
+                <Button variant="contained" color="primary">
+                    login
                 </Button>
             </Card>
         </div>
     )
 }
-export default AddMovie
+export default Register

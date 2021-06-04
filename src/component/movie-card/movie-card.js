@@ -8,11 +8,12 @@ import Rating from '@material-ui/lab/Rating';
 const MovieCard =(props)=> {
     const {movie}= props
     const [value, setValue] = React.useState(movie.rating)
+    const URI = 'http://localhost:3001/'
 
     return (
         <Card  className= {'h-card'}>
             <div className= {'img-film'}>
-                <img src={movie.posteurl} />
+                <img src={URI+ movie.poster} />
                 </div>
                 <div className={'info-film'}>
                 <span className={'info-title'}>{movie.title} </span>

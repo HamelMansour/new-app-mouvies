@@ -34,8 +34,9 @@ const Navbar= () => {
           <Typography variant="h6" className={classes.title}>
             movies
           </Typography>
-          <Button onClick={()=> router.push('/register')} color="inherit">Register</Button>
+          <Button onClick={()=> router.push('/Register')} color="inherit">Register</Button>
           <Button onClick={()=> router.push('/Login')} color="inherit">Login</Button>
+          <Button onClick={()=> router.push('/addmovie')} color="inherit">ADD NEW MOVIE</Button>
         </Toolbar>
       </AppBar>
     </div>
